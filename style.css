@@ -63,4 +63,44 @@ input, select {
     background: rgb(224, 224, 224);
     border-radius: 10px;
     font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 2px solid rgb(0, 26, 255);
+    transform: translateY(-5px);
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-weight: 600;
+
+
+}
+
+
+.converter-btn {
+    background-image: linear-gradient(rgb(255, 255, 140), rgb(255, 166, 2));
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+
+}
+
+.converter-btn:hover {
+    transform: translateY(-3px);
+    
+}
+
+.converter-btn:active {
+    background: rgb(109, 197, 226);
 }
