@@ -26,7 +26,7 @@ async function convertMoney(){
         result.innerHTML = `
             <div>
 
-                ${}
+                ${amount.value} ${fromCurrency.value} = ${convertedAmount.value} ${toCurrency.value}
         
             </div>
         
