@@ -19,7 +19,7 @@ async function convertMoney(){
         const data = await response.json()
 
         const rate = data.rates[toCurrency.value]
-        const convertedValue = (amount.value * rate)
+        const convertedValue = (amount.value * rate).toFixed(2)
 
         convertedAmount.value = convertedValue
 
@@ -27,7 +27,13 @@ async function convertMoney(){
             <div>
 
                 ${amount.value} ${fromCurrency.value} = ${convertedAmount.value} ${toCurrency.value}
-        
+                
+            </div>
+
+            <div>
+                Taxa: 1 ${fromCurrency.value} = ${rate} ${toCurrency.value}
+            
+            
             </div>
         
         `
