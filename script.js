@@ -1,7 +1,9 @@
 let form = document.getElementById("converterForm")
 const amount = document.getElementById("amount")
 const fromCurrency = document.getElementById("fromCurrency")
-const converteAmount = document.getElementById("converteAmount") 
+const converteAmount = document.getElementById("converteAmount")
+const toCurrency = document.getElementById("toCurrency")
+const loading = document.querySelector(".loading")
 
 function convertMoney(){
     console.log("")
