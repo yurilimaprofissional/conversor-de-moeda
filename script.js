@@ -18,7 +18,19 @@ async function convertMoney(){
         const response = await fetch(API_URL + fromCurrency.value)
         const data = await response.json()
 
-        console.log(data)
+        const rate = data.rates[toCurrency.value]
+        const convertedValue = (amount.value * rate)
+
+        convertedAmount.value = convertedValue
+
+        result.innerHTML = `
+            <div>
+
+                ${}
+        
+            </div>
+        
+        `
 
 
     }
