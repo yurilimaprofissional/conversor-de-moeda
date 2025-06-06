@@ -9,15 +9,28 @@ const error = document.querySelector(".error")
 
 const API_URL = "https://api.exchangerate-api.com/v4/latest/"
 
-function convertMoney(){
+async function convertMoney(){
 
     loading.style.display = "block"
-    console.log("Funcionou")
+    
+
+    try {
+        const response = await fetch(API_URL + fromCurrency.value)
+        const data = await response.json()
+
+        console.log(data)
+
+
+    }
+
+    catch(error) {
+        alert("Falha no Servidor")
+    }
 
 }
 
 form.addEventListener("submit",function(event){
     event.preventDefault()
     convertMoney()
-    console.log(event)
+    
 })
