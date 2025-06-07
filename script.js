@@ -24,13 +24,13 @@ async function convertMoney(){
         convertedAmount.value = convertedValue
 
         result.innerHTML = `
-            <div>
+            <div style="font-size: 1.4rem;">
 
                 ${amount.value} ${fromCurrency.value} = ${convertedAmount.value} ${toCurrency.value}
                 
             </div>
 
-            <div>
+            <div style="font-size: 0.9rem: opacity:0.8; margin-top: 10px;">
                 Taxa: 1 ${fromCurrency.value} = ${rate} ${toCurrency.value}
             
             
